@@ -105,8 +105,8 @@ class MusicLibraryController
 
     def play_song
         puts "Which song number would you like to play?"
-        self.list_songs
         var =self.list_songs
+        var
         input = gets
         number = input.to_i
           binding.pry
