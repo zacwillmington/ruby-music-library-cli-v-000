@@ -105,11 +105,12 @@ class MusicLibraryController
 
     def play_song
         puts "Which song number would you like to play?"
-        #self.list_songs
+        self.list_songs
         input = gets
         number = input.to_i
           #binding.pry
          if number > 0 && number <= self.list_songs.length
+             
            self.list_songs.to_a[input + 1].split(" - ").each do |song|
               puts "Playing #{song[0]} by #{song[1]}"
             end
