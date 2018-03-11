@@ -110,10 +110,11 @@ class MusicLibraryController
         number = input.to_i
           #binding.pry
          if number > 0 && number <= self.list_songs.length
-             
+
            self.list_songs.to_a[input + 1].split(" - ").each do |song|
               puts "Playing #{song[0]} by #{song[1]}"
             end
+            
         end
     end
 end
